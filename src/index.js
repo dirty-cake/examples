@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Hello from './components/Hello.js';
-
+import ClickCounter from './components/ClickCounter.js';
+import HoverCounter from './components/HoverCounter.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hello />
+    <ClickCounter />
+    <HoverCounter />
   </React.StrictMode>,
   document.getElementById('root')
 );
