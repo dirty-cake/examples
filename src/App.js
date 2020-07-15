@@ -8,7 +8,9 @@ const App = () => {
 
   return (
     <div>
-      {position.x} : {position.y}
+      <p>You are on position of</p> 
+      <p>X - {position.x}</p> 
+      <p>Y - {position.y}</p>
     </div>
   );
 };
