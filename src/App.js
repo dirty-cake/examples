@@ -1,28 +1,15 @@
 import React from 'react';
 import './App.css';
-import Modal from "./hooks/Modal";
+import { useMouseMove } from './hooks/useMouseMove';
 
-function App() {
-  const modalRef = React.useRef();
 
-  const openModal = () => {
-    modalRef.current.openModal()
-  };
+const App = () => {
+  const position = useMouseMove();
 
   return (
-    <div className="App">
-      <button onClick={openModal}>Open Modal</button>
-      <Modal ref={modalRef}>
-        <h1>Modal</h1>
-        <p>
-          <span>bla bla bla </span>
-        </p>
-        <button onClick={modalRef.current?.close}>
-          Close Modal
-        </button>
-      </Modal>
+    <div>
+      {position.x} : {position.y}
     </div>
   );
-}
-
+};
 export default App;
