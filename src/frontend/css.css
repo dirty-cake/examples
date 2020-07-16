@@ -1,0 +1,34 @@
+/* Exit Modal */
+
+.top_block {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.botton_block {
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 440px;
+    background-color: #dfe1e6;
+    padding-top: 20px;
+    padding-right: 61px;
+    padding-left: 61px;
+}
+.time_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.timer_digit {
+    background-color: #000000;
+    border-radius: 5px;
+    width: 8px;
+    height: 16px;
+}
+.double_dot {
+    width: 22px;
+    height: 30px;
+}
