@@ -3,17 +3,25 @@
 .top_block {
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 22px 20px 20px 20px;
 }
-.botton_block {
+.bottom_block {
     align-items: center;
     justify-content: center;
     width: 480px;
     height: 440px;
     background-color: #dfe1e6;
+    background-image: url(../assets/oval.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.main_content {
     padding-top: 20px;
     padding-right: 61px;
     padding-left: 61px;
+}
+.promo_code {
+    text-decoration: underline;
 }
 .time_block {
     display: flex;
@@ -24,11 +32,53 @@
 }
 .timer_digit {
     background-color: #000000;
-    border-radius: 5px;
-    width: 8px;
-    height: 16px;
+    border-radius: 4px;
+    padding:7px;
+    margin: 1px;
+
 }
 .double_dot {
-    width: 22px;
-    height: 30px;
+    padding: 2px;
+}
+.goods_control {
+    background-image: url(../assets/patterns.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.goods_preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.images_side {
+    height: 90px;
+    width: auto; 
+}
+.images_inside {
+    height: 90px;
+    width: 120px;
+}
+.image_box {
+    height: 140px;
+    width: 130px;
+}
+.image {
+    height: 100%;
+    width: auto;
+    max-width: 100%;                                            
+}
+.control_block {
+    padding: 28px;
+}
+.button {
+    width: 100%;
+}
+.arrow {
+    color: white;
+    width: 35px;
+    height: 14px;
+    margin: 0;
+    object-fit: contain;
+	margin-left: 10px;
 }
