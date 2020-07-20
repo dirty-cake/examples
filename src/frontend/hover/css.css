@@ -1,0 +1,73 @@
+/* Nav hover */
+.menu {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.new_arrivals {
+    height: auto;
+    width: 200px;
+    margin: 0;
+    text-align: left;
+}
+.content_new_arrivals {
+    text-align: left;
+}
+.title1 {
+    color: #40a5a2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.popular_brands {
+    height: auto;
+    width: 240px;
+    text-align: left;
+
+}
+.content_popular_brands {
+    display: flex;
+    text-align: left;
+}
+.title2 {
+    color: #cd845c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.firstly {
+    margin-right: 40px;
+}
+.gifting {
+    height: auto;
+    width: 200px;
+    text-align: left;
+}
+.content_gifting {
+    text-align: left;
+}
+.title3 {
+    color: #d05050;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+    padding-bottom: 10px;
+}
+.marketplace_finds {
+    height: auto;
+    width: 200px;
+    text-align: left;
+}
+.content_marketplace_finds {
+    text-align: left;
+}
+.title4 {
+    color: #895fbe;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+    padding-bottom: 10px;
+}
