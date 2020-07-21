@@ -1,73 +1,76 @@
 /* Nav hover */
-.menu {
+.hover_menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    padding-top: 20px;
+    pointer-events: auto;
+}
+.hover_menu::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11px 6px 11px;
+    border-color: transparent transparent #ffffff transparent;
+    filter: drop-shadow(0 -3px 2px rgba(0, 0, 0, 0.05));
+}
+.hover_menu-show,
+.hover_menu:hover {
+    display: block;
+}
+.hover_menu--wrapper {
     display: flex;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
+    width: calc(100vw - 60px);
+    padding: 30px;
+    border-radius: 3px;
 }
-.new_arrivals {
-    height: auto;
-    width: 200px;
-    margin: 0;
-    text-align: left;
-}
-.content_new_arrivals {
-    text-align: left;
-}
-.title1 {
-    color: #40a5a2;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding-bottom: 10px;
-}
-.popular_brands {
-    height: auto;
-    width: 240px;
-    text-align: left;
-
-}
-.content_popular_brands {
-    display: flex;
-    text-align: left;
-}
-.title2 {
-    color: #cd845c;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding-bottom: 10px;
-}
-.firstly {
+.hover_menu--wrapper > *:not(:last-child) {
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
     margin-right: 40px;
 }
-.gifting {
-    height: auto;
-    width: 200px;
-    text-align: left;
+.hover_menu--title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 10px;
 }
-.content_gifting {
-    text-align: left;
+.hover_menu--title-arrivals {
+    color: #40a5a2;
 }
-.title3 {
+.hover_menu--title-brands {
+    color: #cd845c;
+}
+.hover_menu--title-gifting {
     color: #d05050;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5; 
-    padding-bottom: 10px;
 }
-.marketplace_finds {
-    height: auto;
-    width: 200px;
-    text-align: left;
-}
-.content_marketplace_finds {
-    text-align: left;
-}
-.title4 {
+.hover_menu--title-market {
     color: #895fbe;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5; 
-    padding-bottom: 10px;
+}
+.hover_menu--title-blog {
+    color: #000000;
+}
+.hover_menu--columns {
+    display: flex;
+}
+.hover_menu--columns > *:not(:last-child) {
+    margin-right: 40px;
+}
+.hover_menu--rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+}
+.hover_menu--block {
+    display: flex;
+    flex-direction: column;
+}
+.hover_menu--blog_link {
+    color: #cd845c;
 }
